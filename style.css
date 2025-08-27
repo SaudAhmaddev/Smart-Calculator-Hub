@@ -92,3 +92,54 @@ h1, h2 {
         font-size: 112.5%; /* Slightly larger font on bigger screens for readability */
     }
 }
+/* ==========================================================================
+   5. Category Card Grid
+   ========================================================================== */
+
+.category-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 column on mobile */
+    gap: 1.5rem; /* Space between cards */
+}
+
+.category-card {
+    display: block;
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1.5rem;
+    text-align: left;
+    color: var(--text-color);
+    text-decoration: none; /* Remove underline from the link */
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.category-card:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Stronger shadow on hover */
+}
+
+.category-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.category-card p {
+    text-align: left;
+    margin: 0;
+}
+
+/* --- Responsive grid for tablets and desktops --- */
+@media (min-width: 600px) {
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+
+@media (min-width: 900px) {
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on desktops */
+    }
+}
+
