@@ -1,0 +1,145 @@
+/* ==========================================================================
+   1. Professional Setup: Variables & Modern Reset
+   ========================================================================== */
+
+:root {
+    --primary-color: #0a74da; /* A professional blue for links and accents */
+    --dark-color: #1a1a1a;    /* Near-black for headings */
+    --text-color: #333;      /* Dark grey for readable body text */
+    --light-grey: #f4f4f4;   /* A clean, light background */
+    --white: #ffffff;
+    --sans-serif-font: system-ui, -apple-system, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body, h1, h2, p {
+    margin: 0;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ==========================================================================
+   2. Base Body & Typography Styles (Mobile First)
+   ========================================================================== */
+
+body {
+    font-family: var(--sans-serif-font);
+    line-height: 1.6;
+    background-color: var(--white);
+    color: var(--text-color);
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px; /* Max width for large screens */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 0;
+}
+
+h1, h2 {
+    color: var(--dark-color);
+    line-height: 1.2;
+}
+
+/* ==========================================================================
+   3. Header, Main, Footer Layout
+   ========================================================================== */
+
+.site-header, .site-footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: var(--light-grey);
+}
+
+.site-header h1 {
+    font-size: 2.5rem; /* Larger font size for main title */
+}
+
+.site-main {
+    padding: 2rem 0;
+    text-align: center; /* Center the "coming soon" text for now */
+}
+
+.site-footer {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   4. Desktop & Tablet Styles (Responsive)
+   ========================================================================== */
+
+@media (min-width: 768px) {
+    body {
+        font-size: 112.5%; /* Slightly larger font on bigger screens for readability */
+    }
+}
+/* ==========================================================================
+   5. Category Card Grid
+   ========================================================================== */
+
+.category-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 column on mobile */
+    gap: 1.5rem; /* Space between cards */
+}
+
+.category-card {
+    display: block;
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1.5rem;
+    text-align: left;
+    color: var(--text-color);
+    text-decoration: none; /* Remove underline from the link */
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.category-card:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Stronger shadow on hover */
+}
+
+.category-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.category-card p {
+    text-align: left;
+    margin: 0;
+}
+
+/* --- Responsive grid for tablets and desktops --- */
+@media (min-width: 600px) {
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+
+@media (min-width: 900px) {
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on desktops */
+    }
+}
+
