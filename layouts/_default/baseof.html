@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="font-sans antialiased text-gray-900 bg-white">
+  {{ partial "header.html" . }}
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+  <script src="/js/main.js" defer></script>
+</body>
+</html>
