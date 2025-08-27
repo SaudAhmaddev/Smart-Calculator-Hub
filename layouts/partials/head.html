@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ .Title | default "Smart Calculator Hub: Free Online Calculators for Finance, Science, Health & More" }}</title>
+<meta name="description" content="{{ .Site.Params.description }}">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="preload" as="style" href="/css/styles.css">
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:title" content="Smart Calculator Hub: Free Online Calculators">
+<meta property="og:description" content="Explore free calculators for finance, science, health, and more.">
+<meta property="og:image" content="/images/og-image.webp">
+<meta property="og:url" content="https://smartcalculatorhub.netlify.app/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Smart Calculator Hub",
+  "url": "https://smartcalculatorhub.netlify.app/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://smartcalculatorhub.netlify.app/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Smart Calculator Hub",
+  "url": "https://smartcalculatorhub.netlify.app/",
+  "logo": "https://smartcalculatorhub.netlify.app/images/logo.webp"
+}
+</script>
+<script type="application/ld+json">
+{{ partial "faq.html" . }}
+</script>
+<link rel="manifest" href="/manifest.json">
