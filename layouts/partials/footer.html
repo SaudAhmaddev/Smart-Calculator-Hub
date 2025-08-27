@@ -1,0 +1,19 @@
+<footer class="bg-gray-800 text-white py-8">
+  <div class="container mx-auto px-4">
+    <p>&copy; 2025 Smart Calculator Hub. All rights reserved.</p>
+    <nav aria-label="Footer Navigation" class="mt-4">
+      <ul class="flex space-x-4">
+        <li><a href="/privacy" class="hover:text-blue-300">Privacy Policy</a></li>
+        <li><a href="/terms" class="hover:text-blue-300">Terms of Use</a></li>
+        <li><a href="/contact" class="hover:text-blue-300">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="mt-4">
+      <a href="https://x.com/SmartCalcHub" aria-label="Follow us on X"><img src="/images/x-icon.webp" alt="X Icon" class="inline h-6"></a>
+    </div>
+    <form action="/.netlify/functions/subscribe" method="POST" class="mt-4 flex">
+      <input type="email" name="email" placeholder="Subscribe for updates" aria-label="Email for newsletter" required class="p-2 rounded-l-md text-gray-900">
+      <button type="submit" class="bg-blue-600 p-2 rounded-r-md text-white">Subscribe</button>
+    </form>
+  </div>
+</footer>
