@@ -1,0 +1,25 @@
+baseURL = "https://smartcalculatorhub.netlify.app/"
+languageCode = "en-us"
+title = "Smart Calculator Hub"
+theme = "custom-theme"
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "Discover categorized online calculators at Smart Calculator Hub. Access free tools for financial planning, scientific computations, and more with expert guides."
+  og_image = "/images/og-image.webp"
+
+[markup]
+  [markup.goldmark]
+    renderer.unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[permalinks]
+  blog = "/blog/:slug/"
+  about = "/about/"
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
