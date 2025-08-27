@@ -1,0 +1,15 @@
+- name: "What is Smart Calculator Hub?"
+  acceptedAnswer:
+    text: "Smart Calculator Hub is a free online directory of categorized calculators for finance, science, health, and more, designed for accuracy and ease."
+- name: "Are the calculators free to use?"
+  acceptedAnswer:
+    text: "Yes, all calculators on Smart Calculator Hub are completely free and require no sign-up."
+- name: "How accurate are the calculators?"
+  acceptedAnswer:
+    text: "Our calculators use expert-verified formulas to ensure reliable and accurate results."
+- name: "Can I use the calculators on mobile?"
+  acceptedAnswer:
+    text: "Absolutely, our site is mobile-optimized for seamless use on smartphones and tablets."
+- name: "How do I find a specific calculator?"
+  acceptedAnswer:
+    text: "Use the search bar at the top or browse our categorized sections to find the tool you need."
