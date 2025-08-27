@@ -1,0 +1,19 @@
+<header class="sticky top-0 z-10 bg-white shadow-md" role="banner">
+  <div class="container mx-auto flex items-center justify-between py-4 px-4">
+    <a href="/" aria-label="Smart Calculator Hub Home">
+      <img src="/images/logo.webp" alt="Smart Calculator Hub Logo" width="150" height="50" loading="eager" class="h-12">
+    </a>
+    <nav aria-label="Main Navigation">
+      <ul class="flex space-x-6">
+        <li><a href="#categories" class="hover:text-blue-600">Categories</a></li>
+        <li><a href="#featured" class="hover:text-blue-600">Featured</a></li>
+        <li><a href="/blog" class="hover:text-blue-600">Blog</a></li>
+        <li><a href="/about" class="hover:text-blue-600">About</a></li>
+      </ul>
+    </nav>
+    <form role="search" action="/search" class="flex items-center" x-data="{ query: '' }" @submit.prevent>
+      <input type="search" name="q" placeholder="Search calculators..." aria-label="Search for calculators" required class="border rounded-l-md p-2" x-model="query">
+      <button type="submit" class="bg-blue-600 text-white p-2 rounded-r-md">Search</button>
+    </form>
+  </div>
+</header>
